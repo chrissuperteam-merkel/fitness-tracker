@@ -45,3 +45,18 @@ python3 -m http.server 8080
 ## License
 
 MIT
+
+## Docker
+
+```bash
+# Pull and run
+docker run -d -p 8080:80 ghcr.io/chrissuperteam-merkel/fitness-tracker:latest
+
+# Open http://localhost:8080
+```
+
+### Build locally
+```bash
+docker build -t fitness-tracker .
+docker run -d -p 8080:80 fitness-tracker
+```
