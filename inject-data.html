@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Injecting data...</title></head>
+<body>
+<script>
+// Inject 6 workouts across 3 splits
+const workouts = [
+  {date:'2026-01-15',split:'push',duration:52,exercises:{'0':{name:'Bench Press',sets:[{kg:'80',reps:'10',done:true},{kg:'85',reps:'8',done:true},{kg:'90',reps:'6',done:true}]},'1':{name:'Schrägbank',sets:[{kg:'60',reps:'10',done:true},{kg:'65',reps:'8',done:true}]},'2':{name:'Schulterdrücken',sets:[{kg:'40',reps:'10',done:true},{kg:'42',reps:'8',done:true}]}}},
+  {date:'2026-01-18',split:'pull',duration:48,exercises:{'0':{name:'Barbell Row',sets:[{kg:'70',reps:'10',done:true},{kg:'75',reps:'8',done:true},{kg:'80',reps:'6',done:true}]},'1':{name:'Lat Pulldown',sets:[{kg:'55',reps:'10',done:true},{kg:'60',reps:'8',done:true}]},'2':{name:'Bizeps Curls',sets:[{kg:'15',reps:'12',done:true},{kg:'17',reps:'10',done:true}]}}},
+  {date:'2026-01-21',split:'legs',duration:55,exercises:{'0':{name:'Squat',sets:[{kg:'100',reps:'8',done:true},{kg:'110',reps:'6',done:true},{kg:'115',reps:'5',done:true}]},'1':{name:'Leg Press',sets:[{kg:'150',reps:'10',done:true},{kg:'160',reps:'8',done:true}]},'2':{name:'Beinbeuger',sets:[{kg:'45',reps:'12',done:true},{kg:'50',reps:'10',done:true}]}}},
+  {date:'2026-01-25',split:'push',duration:50,exercises:{'0':{name:'Bench Press',sets:[{kg:'82',reps:'10',done:true},{kg:'87',reps:'8',done:true},{kg:'92',reps:'6',done:true}]},'1':{name:'Schrägbank',sets:[{kg:'62',reps:'10',done:true},{kg:'67',reps:'8',done:true}]},'2':{name:'Schulterdrücken',sets:[{kg:'42',reps:'10',done:true},{kg:'45',reps:'8',done:true}]}}},
+  {date:'2026-01-29',split:'pull',duration:45,exercises:{'0':{name:'Barbell Row',sets:[{kg:'72',reps:'10',done:true},{kg:'77',reps:'8',done:true},{kg:'82',reps:'6',done:true}]},'1':{name:'Lat Pulldown',sets:[{kg:'58',reps:'10',done:true},{kg:'63',reps:'8',done:true}]},'2':{name:'Bizeps Curls',sets:[{kg:'16',reps:'12',done:true},{kg:'18',reps:'10',done:true}]}}},
+  {date:'2026-02-01',split:'legs',duration:58,exercises:{'0':{name:'Squat',sets:[{kg:'105',reps:'8',done:true},{kg:'115',reps:'6',done:true},{kg:'120',reps:'5',done:true}]},'1':{name:'Leg Press',sets:[{kg:'155',reps:'10',done:true},{kg:'165',reps:'8',done:true}]},'2':{name:'Beinbeuger',sets:[{kg:'48',reps:'12',done:true},{kg:'52',reps:'10',done:true}]}}},
+  {date:'2026-02-05',split:'push',duration:53,exercises:{'0':{name:'Bench Press',sets:[{kg:'85',reps:'10',done:true},{kg:'90',reps:'8',done:true},{kg:'95',reps:'5',done:true}]},'1':{name:'Schrägbank',sets:[{kg:'65',reps:'10',done:true},{kg:'70',reps:'8',done:true}]},'2':{name:'Schulterdrücken',sets:[{kg:'45',reps:'10',done:true},{kg:'47',reps:'8',done:true}]}}},
+  {date:'2026-02-09',split:'pull',duration:47,exercises:{'0':{name:'Barbell Row',sets:[{kg:'75',reps:'10',done:true},{kg:'80',reps:'8',done:true},{kg:'85',reps:'6',done:true}]},'1':{name:'Lat Pulldown',sets:[{kg:'60',reps:'10',done:true},{kg:'65',reps:'8',done:true}]},'2':{name:'Bizeps Curls',sets:[{kg:'17',reps:'12',done:true},{kg:'19',reps:'10',done:true}]}}},
+  {date:'2026-02-12',split:'legs',duration:60,exercises:{'0':{name:'Squat',sets:[{kg:'110',reps:'8',done:true},{kg:'120',reps:'6',done:true},{kg:'125',reps:'4',done:true}]},'1':{name:'Leg Press',sets:[{kg:'160',reps:'10',done:true},{kg:'170',reps:'8',done:true}]},'2':{name:'Beinbeuger',sets:[{kg:'50',reps:'12',done:true},{kg:'55',reps:'10',done:true}]}}}
+];
+localStorage.setItem('workoutHistory', JSON.stringify(workouts));
+localStorage.setItem('bodyWeight', JSON.stringify([
+  {date:'2026-01-15',kg:82.5},{date:'2026-01-20',kg:82.1},{date:'2026-01-25',kg:81.8},
+  {date:'2026-01-30',kg:81.5},{date:'2026-02-05',kg:81.2},{date:'2026-02-10',kg:80.9},{date:'2026-02-12',kg:80.7}
+]));
+document.write('<h1 style="color:white;background:#111;padding:40px;font-family:sans-serif">✅ Daten injiziert! 9 Workouts + Gewichtsverlauf.<br><br><a href="test.html" style="color:#6366f1;font-size:24px">→ Zur App</a></h1>');
+</script>
+</body></html>
